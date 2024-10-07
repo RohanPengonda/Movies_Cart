@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+html {
+  font-size: 62%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 900;
+}
+
+p,
+a,
+li,
+label {
+  font-size: 1.9rem;
+  letter-spacing: 0.1rem;
+  color: var(--para-color);
+  line-height: 1.5;
+  font-weight: 400;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+:root {
+  --main-color: rgb(52, 52, 209);
+  --supporting-color: white;
+  --font-color: black;
+  --para-color: rgb(71, 67, 67);
+  --heading-color: black;
+}
+.container {
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 9.6rem 2.4 rem;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+.grid-two--cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-three--cols {
+  grid-template-columns: repeat(3, 1fr);
+}
